@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5829E4D324F2F503000FB6FE /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5829E4D224F2F503000FB6FE /* Encryption.swift */; };
+		5829E4D524F38937000FB6FE /* DocumentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5829E4D424F38937000FB6FE /* DocumentListVC.swift */; };
+		5838DEB82509E04B000B18A3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5838DEB72509E04B000B18A3 /* Extensions.swift */; };
+		5838DEBB2509E41E000B18A3 /* BlockInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5838DEBA2509E41E000B18A3 /* BlockInfo.swift */; };
+		5838DEBD2509E461000B18A3 /* PDFDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5838DEBC2509E461000B18A3 /* PDFDetails.swift */; };
+		5838DEBF2509E492000B18A3 /* FormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5838DEBE2509E492000B18A3 /* FormInfo.swift */; };
+		5838DEC1250B275D000B18A3 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5838DEC0250B275D000B18A3 /* DownloadManager.swift */; };
+		585F1DB325132A450092BF8E /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585F1DB225132A450092BF8E /* FormView.swift */; };
+		585F1DB5251475A70092BF8E /* PDFEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585F1DB4251475A70092BF8E /* PDFEditor.swift */; };
+		585F1DB8251581FC0092BF8E /* PDFSimpleEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585F1DB7251581FC0092BF8E /* PDFSimpleEditorVC.swift */; };
+		585F1DBA251582440092BF8E /* LabelInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585F1DB9251582440092BF8E /* LabelInputCell.swift */; };
+		585F1DBC251D78AF0092BF8E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585F1DBB251D78AF0092BF8E /* ImagePicker.swift */; };
+		587E3AAF24E259B800ADBAF4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587E3AAE24E259B800ADBAF4 /* UserService.swift */; };
+		587E3AB124E259C600ADBAF4 /* FormService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587E3AB024E259C600ADBAF4 /* FormService.swift */; };
+		58855FD2254609460043C8EA /* ArchivedListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58855FD1254609460043C8EA /* ArchivedListVC.swift */; };
+		589176E9253FD35600C8F175 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589176E8253FD35600C8F175 /* Annotation.swift */; };
+		589176EE253FE14600C8F175 /* FormServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589176ED253FE14600C8F175 /* FormServiceResult.swift */; };
+		589176F4253FEB9D00C8F175 /* KindFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589176F3253FEB9D00C8F175 /* KindFlow.swift */; };
+		589176F8253FEBBC00C8F175 /* StaffAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589176F7253FEBBC00C8F175 /* StaffAccount.swift */; };
+		589176FD253FEC0300C8F175 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589176FC253FEC0300C8F175 /* UserRequest.swift */; };
+		58A4255924C6A5270054FBA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A4255824C6A5270054FBA9 /* AppDelegate.swift */; };
+		58A4255B24C6A5270054FBA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A4255A24C6A5270054FBA9 /* SceneDelegate.swift */; };
+		58A4255D24C6A5270054FBA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A4255C24C6A5270054FBA9 /* ViewController.swift */; };
+		58A4256024C6A5270054FBA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A4255E24C6A5270054FBA9 /* Main.storyboard */; };
+		58A4256324C6A5270054FBA9 /* PDFSign.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58A4256124C6A5270054FBA9 /* PDFSign.xcdatamodeld */; };
+		58A4256524C6A5280054FBA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A4256424C6A5280054FBA9 /* Assets.xcassets */; };
+		58A4256824C6A5280054FBA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A4256624C6A5280054FBA9 /* LaunchScreen.storyboard */; };
+		58A4257324C6A5280054FBA9 /* PDFSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A4257224C6A5280054FBA9 /* PDFSignTests.swift */; };
+		58CB50E0251EB1B20035AB41 /* SignatureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB50DF251EB1B20035AB41 /* SignatureVC.swift */; };
+		58F93FB22510789700E91979 /* PDFViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F93FB12510789700E91979 /* PDFViewerVC.swift */; };
+		58FD9457252302910067DA46 /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD9456252302910067DA46 /* UploadManager.swift */; };
+		7D1017B9EB45AA88ECA41DDE /* Pods_PDFSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9887204012556A893DC44DF6 /* Pods_PDFSign.framework */; };
+		96D0563D118EFA75EDCF68DD /* Pods_PDFSignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A18B0637FB95D323F29C620 /* Pods_PDFSignTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58A4256F24C6A5280054FBA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58A4254D24C6A5270054FBA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58A4255424C6A5270054FBA9;
+			remoteInfo = PDFSign;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D3675595CB6F414DF062E30 /* Pods-PDFSignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFSignTests.debug.xcconfig"; path = "Target Support Files/Pods-PDFSignTests/Pods-PDFSignTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A18B0637FB95D323F29C620 /* Pods_PDFSignTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFSignTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5829E4D224F2F503000FB6FE /* Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		5829E4D424F38937000FB6FE /* DocumentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentListVC.swift; sourceTree = "<group>"; };
+		5838DEB72509E04B000B18A3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5838DEBA2509E41E000B18A3 /* BlockInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockInfo.swift; sourceTree = "<group>"; };
+		5838DEBC2509E461000B18A3 /* PDFDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDetails.swift; sourceTree = "<group>"; };
+		5838DEBE2509E492000B18A3 /* FormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInfo.swift; sourceTree = "<group>"; };
+		5838DEC0250B275D000B18A3 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		585F1DB225132A450092BF8E /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		585F1DB4251475A70092BF8E /* PDFEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFEditor.swift; sourceTree = "<group>"; };
+		585F1DB7251581FC0092BF8E /* PDFSimpleEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSimpleEditorVC.swift; sourceTree = "<group>"; };
+		585F1DB9251582440092BF8E /* LabelInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelInputCell.swift; sourceTree = "<group>"; };
+		585F1DBB251D78AF0092BF8E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		587E3AAE24E259B800ADBAF4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		587E3AB024E259C600ADBAF4 /* FormService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormService.swift; sourceTree = "<group>"; };
+		587E3AB324E3A7C500ADBAF4 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58855FD1254609460043C8EA /* ArchivedListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedListVC.swift; sourceTree = "<group>"; };
+		589176E8253FD35600C8F175 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		589176ED253FE14600C8F175 /* FormServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormServiceResult.swift; sourceTree = "<group>"; };
+		589176F3253FEB9D00C8F175 /* KindFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindFlow.swift; sourceTree = "<group>"; };
+		589176F7253FEBBC00C8F175 /* StaffAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffAccount.swift; sourceTree = "<group>"; };
+		589176FC253FEC0300C8F175 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		58A4255524C6A5270054FBA9 /* PDFSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A4255824C6A5270054FBA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58A4255A24C6A5270054FBA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		58A4255C24C6A5270054FBA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58A4255F24C6A5270054FBA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58A4256224C6A5270054FBA9 /* PDFSign.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PDFSign.xcdatamodel; sourceTree = "<group>"; };
+		58A4256424C6A5280054FBA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58A4256724C6A5280054FBA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58A4256924C6A5280054FBA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A4256E24C6A5280054FBA9 /* PDFSignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFSignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A4257224C6A5280054FBA9 /* PDFSignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSignTests.swift; sourceTree = "<group>"; };
+		58A4257424C6A5280054FBA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58CB50DF251EB1B20035AB41 /* SignatureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureVC.swift; sourceTree = "<group>"; };
+		58F93FB12510789700E91979 /* PDFViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerVC.swift; sourceTree = "<group>"; };
+		58FD9456252302910067DA46 /* UploadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadManager.swift; sourceTree = "<group>"; };
+		89B50CBA4ED4804184869374 /* Pods-PDFSignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFSignTests.release.xcconfig"; path = "Target Support Files/Pods-PDFSignTests/Pods-PDFSignTests.release.xcconfig"; sourceTree = "<group>"; };
+		9887204012556A893DC44DF6 /* Pods_PDFSign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFSign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AFA005EB08D49B4FAA5662 /* Pods-PDFSign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFSign.release.xcconfig"; path = "Target Support Files/Pods-PDFSign/Pods-PDFSign.release.xcconfig"; sourceTree = "<group>"; };
+		CF8A7AA477633E8BE9AFA0EA /* Pods-PDFSign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFSign.debug.xcconfig"; path = "Target Support Files/Pods-PDFSign/Pods-PDFSign.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58A4255224C6A5270054FBA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1017B9EB45AA88ECA41DDE /* Pods_PDFSign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58A4256B24C6A5280054FBA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D0563D118EFA75EDCF68DD /* Pods_PDFSignTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5829E4D124F2F4EE000FB6FE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				585F1DB125132A310092BF8E /* Static Form */,
+				5829E4D224F2F503000FB6FE /* Encryption.swift */,
+				5838DEB72509E04B000B18A3 /* Extensions.swift */,
+				5838DEC0250B275D000B18A3 /* DownloadManager.swift */,
+				585F1DB4251475A70092BF8E /* PDFEditor.swift */,
+				585F1DBB251D78AF0092BF8E /* ImagePicker.swift */,
+				58FD9456252302910067DA46 /* UploadManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5838DEB92509E3FA000B18A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5838DEBA2509E41E000B18A3 /* BlockInfo.swift */,
+				5838DEBC2509E461000B18A3 /* PDFDetails.swift */,
+				5838DEBE2509E492000B18A3 /* FormInfo.swift */,
+				589176E8253FD35600C8F175 /* Annotation.swift */,
+				589176F3253FEB9D00C8F175 /* KindFlow.swift */,
+				589176F7253FEBBC00C8F175 /* StaffAccount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		585F1DB125132A310092BF8E /* Static Form */ = {
+			isa = PBXGroup;
+			children = (
+				585F1DB225132A450092BF8E /* FormView.swift */,
+				585F1DB9251582440092BF8E /* LabelInputCell.swift */,
+			);
+			path = "Static Form";
+			sourceTree = "<group>";
+		};
+		585F1DB6251581DC0092BF8E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58A4255C24C6A5270054FBA9 /* ViewController.swift */,
+				585F1DB7251581FC0092BF8E /* PDFSimpleEditorVC.swift */,
+				5829E4D424F38937000FB6FE /* DocumentListVC.swift */,
+				58F93FB12510789700E91979 /* PDFViewerVC.swift */,
+				58CB50DF251EB1B20035AB41 /* SignatureVC.swift */,
+				58855FD1254609460043C8EA /* ArchivedListVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		587E3AB224E259F100ADBAF4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				589176FB253FEBD800C8F175 /* User */,
+				589176EC253FE10200C8F175 /* Form */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		589176EC253FE10200C8F175 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				587E3AB024E259C600ADBAF4 /* FormService.swift */,
+				589176ED253FE14600C8F175 /* FormServiceResult.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		589176FB253FEBD800C8F175 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				587E3AAE24E259B800ADBAF4 /* UserService.swift */,
+				589176FC253FEC0300C8F175 /* UserRequest.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		58A4254C24C6A5270054FBA9 = {
+			isa = PBXGroup;
+			children = (
+				58A4255724C6A5270054FBA9 /* PDFSign */,
+				58A4257124C6A5280054FBA9 /* PDFSignTests */,
+				58A4255624C6A5270054FBA9 /* Products */,
+				C6F5DB5B60E6BA1F8A62AD5C /* Pods */,
+				B68A0E6077FC666D58F6FC7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58A4255624C6A5270054FBA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58A4255524C6A5270054FBA9 /* PDFSign.app */,
+				58A4256E24C6A5280054FBA9 /* PDFSignTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58A4255724C6A5270054FBA9 /* PDFSign */ = {
+			isa = PBXGroup;
+			children = (
+				585F1DB6251581DC0092BF8E /* View Controllers */,
+				5838DEB92509E3FA000B18A3 /* Model */,
+				587E3AB224E259F100ADBAF4 /* Network */,
+				5829E4D124F2F4EE000FB6FE /* Shared */,
+				58A4255824C6A5270054FBA9 /* AppDelegate.swift */,
+				58A4255A24C6A5270054FBA9 /* SceneDelegate.swift */,
+				58A4255E24C6A5270054FBA9 /* Main.storyboard */,
+				58A4256424C6A5280054FBA9 /* Assets.xcassets */,
+				58A4256624C6A5280054FBA9 /* LaunchScreen.storyboard */,
+				58A4256924C6A5280054FBA9 /* Info.plist */,
+				58A4256124C6A5270054FBA9 /* PDFSign.xcdatamodeld */,
+			);
+			path = PDFSign;
+			sourceTree = "<group>";
+		};
+		58A4257124C6A5280054FBA9 /* PDFSignTests */ = {
+			isa = PBXGroup;
+			children = (
+				58A4257224C6A5280054FBA9 /* PDFSignTests.swift */,
+				58A4257424C6A5280054FBA9 /* Info.plist */,
+			);
+			path = PDFSignTests;
+			sourceTree = "<group>";
+		};
+		B68A0E6077FC666D58F6FC7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				587E3AB324E3A7C500ADBAF4 /* CryptoSwift.framework */,
+				9887204012556A893DC44DF6 /* Pods_PDFSign.framework */,
+				2A18B0637FB95D323F29C620 /* Pods_PDFSignTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6F5DB5B60E6BA1F8A62AD5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF8A7AA477633E8BE9AFA0EA /* Pods-PDFSign.debug.xcconfig */,
+				A8AFA005EB08D49B4FAA5662 /* Pods-PDFSign.release.xcconfig */,
+				0D3675595CB6F414DF062E30 /* Pods-PDFSignTests.debug.xcconfig */,
+				89B50CBA4ED4804184869374 /* Pods-PDFSignTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58A4255424C6A5270054FBA9 /* PDFSign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58A4257724C6A5280054FBA9 /* Build configuration list for PBXNativeTarget "PDFSign" */;
+			buildPhases = (
+				939D56E5D9B24BA49E9FAAA5 /* [CP] Check Pods Manifest.lock */,
+				58A4255124C6A5270054FBA9 /* Sources */,
+				58A4255224C6A5270054FBA9 /* Frameworks */,
+				58A4255324C6A5270054FBA9 /* Resources */,
+				8F6A2CCB846C6BE559CA1079 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFSign;
+			productName = PDFSign;
+			productReference = 58A4255524C6A5270054FBA9 /* PDFSign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58A4256D24C6A5280054FBA9 /* PDFSignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58A4257A24C6A5280054FBA9 /* Build configuration list for PBXNativeTarget "PDFSignTests" */;
+			buildPhases = (
+				38C1DAFEC46C81FD413047BD /* [CP] Check Pods Manifest.lock */,
+				58A4256A24C6A5280054FBA9 /* Sources */,
+				58A4256B24C6A5280054FBA9 /* Frameworks */,
+				58A4256C24C6A5280054FBA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58A4257024C6A5280054FBA9 /* PBXTargetDependency */,
+			);
+			name = PDFSignTests;
+			productName = PDFSignTests;
+			productReference = 58A4256E24C6A5280054FBA9 /* PDFSignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58A4254D24C6A5270054FBA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = weshine;
+				TargetAttributes = {
+					58A4255424C6A5270054FBA9 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					58A4256D24C6A5280054FBA9 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 58A4255424C6A5270054FBA9;
+					};
+				};
+			};
+			buildConfigurationList = 58A4255024C6A5270054FBA9 /* Build configuration list for PBXProject "PDFSign" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58A4254C24C6A5270054FBA9;
+			productRefGroup = 58A4255624C6A5270054FBA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58A4255424C6A5270054FBA9 /* PDFSign */,
+				58A4256D24C6A5280054FBA9 /* PDFSignTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58A4255324C6A5270054FBA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A4256824C6A5280054FBA9 /* LaunchScreen.storyboard in Resources */,
+				58A4256524C6A5280054FBA9 /* Assets.xcassets in Resources */,
+				58A4256024C6A5270054FBA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58A4256C24C6A5280054FBA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38C1DAFEC46C81FD413047BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDFSignTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F6A2CCB846C6BE559CA1079 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PDFSign/Pods-PDFSign-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PDFSign/Pods-PDFSign-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PDFSign/Pods-PDFSign-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		939D56E5D9B24BA49E9FAAA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDFSign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58A4255124C6A5270054FBA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A4255D24C6A5270054FBA9 /* ViewController.swift in Sources */,
+				5838DEB82509E04B000B18A3 /* Extensions.swift in Sources */,
+				5838DEC1250B275D000B18A3 /* DownloadManager.swift in Sources */,
+				587E3AAF24E259B800ADBAF4 /* UserService.swift in Sources */,
+				58A4255924C6A5270054FBA9 /* AppDelegate.swift in Sources */,
+				585F1DB8251581FC0092BF8E /* PDFSimpleEditorVC.swift in Sources */,
+				58855FD2254609460043C8EA /* ArchivedListVC.swift in Sources */,
+				585F1DB5251475A70092BF8E /* PDFEditor.swift in Sources */,
+				589176F4253FEB9D00C8F175 /* KindFlow.swift in Sources */,
+				589176F8253FEBBC00C8F175 /* StaffAccount.swift in Sources */,
+				589176EE253FE14600C8F175 /* FormServiceResult.swift in Sources */,
+				589176FD253FEC0300C8F175 /* UserRequest.swift in Sources */,
+				585F1DBC251D78AF0092BF8E /* ImagePicker.swift in Sources */,
+				589176E9253FD35600C8F175 /* Annotation.swift in Sources */,
+				5838DEBD2509E461000B18A3 /* PDFDetails.swift in Sources */,
+				5829E4D524F38937000FB6FE /* DocumentListVC.swift in Sources */,
+				585F1DBA251582440092BF8E /* LabelInputCell.swift in Sources */,
+				58FD9457252302910067DA46 /* UploadManager.swift in Sources */,
+				587E3AB124E259C600ADBAF4 /* FormService.swift in Sources */,
+				58A4255B24C6A5270054FBA9 /* SceneDelegate.swift in Sources */,
+				58F93FB22510789700E91979 /* PDFViewerVC.swift in Sources */,
+				5838DEBB2509E41E000B18A3 /* BlockInfo.swift in Sources */,
+				5838DEBF2509E492000B18A3 /* FormInfo.swift in Sources */,
+				585F1DB325132A450092BF8E /* FormView.swift in Sources */,
+				58A4256324C6A5270054FBA9 /* PDFSign.xcdatamodeld in Sources */,
+				5829E4D324F2F503000FB6FE /* Encryption.swift in Sources */,
+				58CB50E0251EB1B20035AB41 /* SignatureVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58A4256A24C6A5280054FBA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A4257324C6A5280054FBA9 /* PDFSignTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58A4257024C6A5280054FBA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58A4255424C6A5270054FBA9 /* PDFSign */;
+			targetProxy = 58A4256F24C6A5280054FBA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58A4255E24C6A5270054FBA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58A4255F24C6A5270054FBA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58A4256624C6A5280054FBA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58A4256724C6A5280054FBA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58A4257524C6A5280054FBA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58A4257624C6A5280054FBA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58A4257824C6A5280054FBA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF8A7AA477633E8BE9AFA0EA /* Pods-PDFSign.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6YJ87UL9K9;
+				INFOPLIST_FILE = PDFSign/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.samplecode.pdfACQJLT4ZB3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58A4257924C6A5280054FBA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8AFA005EB08D49B4FAA5662 /* Pods-PDFSign.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6YJ87UL9K9;
+				INFOPLIST_FILE = PDFSign/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.samplecode.pdfACQJLT4ZB3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58A4257B24C6A5280054FBA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D3675595CB6F414DF062E30 /* Pods-PDFSignTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6YJ87UL9K9;
+				INFOPLIST_FILE = PDFSignTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weshine.com.tw.PDFSignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFSign.app/PDFSign";
+			};
+			name = Debug;
+		};
+		58A4257C24C6A5280054FBA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89B50CBA4ED4804184869374 /* Pods-PDFSignTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6YJ87UL9K9;
+				INFOPLIST_FILE = PDFSignTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = weshine.com.tw.PDFSignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFSign.app/PDFSign";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58A4255024C6A5270054FBA9 /* Build configuration list for PBXProject "PDFSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A4257524C6A5280054FBA9 /* Debug */,
+				58A4257624C6A5280054FBA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58A4257724C6A5280054FBA9 /* Build configuration list for PBXNativeTarget "PDFSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A4257824C6A5280054FBA9 /* Debug */,
+				58A4257924C6A5280054FBA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58A4257A24C6A5280054FBA9 /* Build configuration list for PBXNativeTarget "PDFSignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A4257B24C6A5280054FBA9 /* Debug */,
+				58A4257C24C6A5280054FBA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		58A4256124C6A5270054FBA9 /* PDFSign.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58A4256224C6A5270054FBA9 /* PDFSign.xcdatamodel */,
+			);
+			currentVersion = 58A4256224C6A5270054FBA9 /* PDFSign.xcdatamodel */;
+			path = PDFSign.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 58A4254D24C6A5270054FBA9 /* Project object */;
+}
